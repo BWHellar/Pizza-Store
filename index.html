@@ -13,13 +13,13 @@
       <form class="submitOrder">
         <div class="form-group"
           <label for="userName">Name for the Order:</label>
-          <input type="text" class="form-control" id="userName"">
+          <input type="text" class="form-control" id="userName">
         </div>
         <p>Please choose your pizza size:</p>
           <label><input type="radio" name="pizzaSize" value="small">Small</label>
           <label><input type="radio" name="pizzaSize" value="medium">Medium</label>
           <label><input type="radio" name="pizzaSize" value="large">Large</label>
-        <p>Please choose your pizza flavor:</p>
+        <p>Please choose your pizza topping:</p>
           <label><input type="radio" name="pizzaFlavor" value="cheese">Cheese</label>
           <label><input type="radio" name="pizzaFlavor" value="pepperoni">Pepperoni</label>
           <label><input type="radio" name="pizzaFlavor" value="veggie">Veggie Combo</label>
@@ -34,8 +34,11 @@
       <div id="showUserOrder">
         <p><strong>Customer Name:</strong> <span class="name"></span></p>
         <p><strong>Pizza Size:</strong> <span class="size"></span></p>
-        <p><strong>Pizza Flavor:</strong> <span class="flavor"></span></p>
+        <p><strong>Pizza Topping:</strong> <span class="flavor"></span></p>
         <p><strong>Pick-up or Delivery:</strong> <span class=pickOrDel></span></p>
+        <p>Size Price: <span class="size-price"></span></p>
+        <p>Topping Price: <span class="flavor-price"></span></p>
+        <p>Pick-up or Delivery Price: <span class="pickOrDel-price"></span></p>
       </div>
     </div>
   </body>

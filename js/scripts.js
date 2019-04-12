@@ -1,7 +1,25 @@
 function MultiPizzaOrders() {
-  this.orders = [],
-  this.orderId = 0
+  this.orders = [];
+  this.orderId = 0;
 }
+function PizzaOrder (userName, pizSize, pizFlavor, picOrDel) {
+  this.userName = userName,
+  this.pizSize = pizSize,
+  this.pizFlavor = pizFlavor,
+  this.picOrDel = picOrDel
+}
+PizzaOrder.prototype.sizeSelect = function() {
+  if (newSize === "small"){
+    this.price += 6;
+  }else if (this.pizSize === "medium"){
+    this.price += 9;
+  }else if (this.pizSize === "large"){
+    this.price += 12;
+  }else{
+    alert("hi")
+    console.log("somthing went wrong with size");
+  }
+};
 MultiPizzaOrders.prototype.addOrder = function(order) {
   order.id = this.assignOrderId();
   this.orders.push(order);
@@ -20,13 +38,28 @@ MultiPizzaOrders.prototype.findOrder = function(id) {
   };
   return false;
 }
-function PizzaOrder(userName, pizSize, pizFlavor, picOrDel) {
-  this.userName = userName,
-  this.pizSize = pizSize,
-  this.pizFlavor = pizFlavor,
-  this.picOrDel = picOrDel
+
+function OrderPrice() {
+  this.totalCost = [];
+  this.priceId = 0;
 }
-var multiPizzaOrders = new MultiPizzaOrders();
+OrderPrice.prototype.addOrder = function(order) {
+  order.id = this.priceId;
+  this.totalCost.push(order);
+}
+OrderPrice.prototype.assignPriceId = function() {
+  this.priceId += 1;
+  return this.priceId;
+}
+var orderPrice = new OrderPrice ();
+
+function displayOrderPrice(orderPriceDisplay) {
+  var priceDisplay = $("#.size-price");
+  var htmlForPice = "";
+  orderPrice.totalCost.forEach(function(order) {
+  });
+  orderPriceDisplay += "<li id=" + order.id + ">" + "Size of pizza" + "</li>"
+};
 
 function displayPizzaOrder(displayOrder) {
   var userOrder = $("ul#userOrder");
@@ -36,6 +69,8 @@ function displayPizzaOrder(displayOrder) {
   });
   userOrder.html(htmlForOrder);
 };
+
+var multiPizzaOrders = new MultiPizzaOrders();
 
 function showOrder(userId) {
   var order = multiPizzaOrders.findOrder(userId);
@@ -52,16 +87,20 @@ function attachOrderListeners() {
   });
 };
 
+
 $(document).ready(function() {
   $(".submitOrder").submit(function(event) {
     attachOrderListeners();
     event.preventDefault();
     multiPizzaOrders.addOrder(new PizzaOrder ($("input#username").val(), $("input:radio[name=pizzaSize]:checked").val(), $("input:radio[name=pizzaFlavor]:checked").val(), $("input:radio[name=pickUpOrDelivery]:checked").val()))
     $("input#username").val();
-    $("input:radio[name=pizzaSize]:checked").val();
-    $("input:radio[name=pizzaFlavor]:checked").val();
-    $("input:radio[name=pickUpOrDelivery]:checked").val();
+    orderPrice.addOrder(new OrderPrice($("input:radio[name=pizzaSize]:checked").val(), $("input:radio[name=pizzaFlavor]:checked").val(), $("input:radio[name=pickUpOrDelivery]:checked").val()))
+    var pizSize =  $("input:radio[name=pizzaSize]:checked").val();
+    var pizFlavor = $("input:radio[name=pizzaFlavor]:checked").val();
+    var picOrDel = $("input:radio[name=pickUpOrDelivery]:checked").val();
     displayPizzaOrder(multiPizzaOrders);
+    displayOrderPrice(orderPriceDisplay);
+
   });
 
 });
