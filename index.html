@@ -11,6 +11,8 @@
   <body>
     <div class="container">
       <form class="submitOrder">
+      <label for="userName">Name for the Order:</label>
+      <input type="text" class="userName">
         <p>Please choose your pizza size:</p>
         <label><input type="radio" name="pizzaSize" value="small">Small</label>
         <label><input type="radio" name="pizzaSize" value="medium">Medium</label>
@@ -24,6 +26,15 @@
         <label><input type="radio" name="pickUpOrDelivery" value="delivery">Delivery</label>
         <button type="submit" name="order">Place Order</button>
       </form>
+      <h3>Order</h3>
+      <ul class="userOrder">
+      </ul>
+      <div id="showUserOrder">
+        <p>Customer Name:<span class="name"></span></p>
+        <p>Pizza Size:<span class="size"></span></p>
+        <p>Pizza Flavor:<span class="flavor"></span></p>
+        <p>Pick-up or Delivery<span class=pickOrDel></span></p>
+      </div>
     </div>
   </body>
 </html>
