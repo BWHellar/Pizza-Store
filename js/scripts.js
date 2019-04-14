@@ -37,17 +37,17 @@ UserOrder.prototype.addPizza = function (pizza) {
 Pizza.prototype.price = function () {
   var total = 0;
   if (this.pieSize === "small") {
-    total += 6;
+    total += 6.50;
   }else if (this.pieSize === "medium") {
-    total += 9;
+    total += 9.50;
   }else if (this.pieSize === "large") {
-    total += 12;
+    total += 12.50;
   }else{
     total += 0;
   }if (this.pieTopping === "cheese"){
-    total += 1;
+    total += .99;
   }else if (this.pieTopping === "pepperoni"){
-    total += 2;
+    total += 2.50;
   }else if (this.pieTopping === "veggie"){
     total += 1.50;
   }else{

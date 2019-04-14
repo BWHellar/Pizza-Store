@@ -6,38 +6,64 @@
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/jquery-3.3.1.js" charset="utf-8"></script>
     <script src="js/scripts.js" charset="utf-8"></script>
-    <title>Smexy Pizza</title>
+    <title>PieZel</title>
   </head>
   <body>
-    <div class="container">
-      <form class="submitOrder">
-        <div class="form-group">
-              <label for="new-first-name">First Name:</label>
-              <input type="text"  class="form-control" id="name">
-            </div>
-        <p>Please choose your pizza size:</p>
-          <label><input type="radio" name="pizzaSize" value="small">Small</label>
-          <label><input type="radio" name="pizzaSize" value="medium">Medium</label>
-          <label><input type="radio" name="pizzaSize" value="large">Large</label>
-        <p>Please choose your pizza topping:</p>
-          <label><input type="radio" name="pizzaFlavor" value="cheese">Cheese</label>
-          <label><input type="radio" name="pizzaFlavor" value="pepperoni">Pepperoni</label>
-          <label><input type="radio" name="pizzaFlavor" value="veggie">Veggie Combo</label>
-        <p>Would you like pick-up or delivery?</p>
-          <label><input type="radio" name="pickUpOrDelivery" value="pickUp">Pick-up</label>
-          <label><input type="radio" name="pickUpOrDelivery" value="delivery">Delivery</label>
-        <button type="submit" name="order">Place Order</button>
-      </form>
-      <h3>Order</h3>
-      <ul id="userOrder">
-      </ul>
-      <ul id="orderPrice">
-      </ul>
-      <div id="showUserOrder">
-        <p><strong>Customer Name:</strong> <span class="name"></span></p>
-        <p><strong>Pizza Size:</strong> <span class="size"></span></p>
-        <p><strong>Pizza Topping:</strong> <span class="flavor"></span></p>
-        <p><strong>Pick-up or Delivery:</strong> <span class=pickOrDel></span></p>
+    <div class="grid">
+      <div class="header">
+        <h1>PieZel</h1>
+      </div>
+      <div class="info">
+        <h4><strong>Who are we?</strong></h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div class="orderForm">
+        <form class="submitOrder">
+          <div class="form-group">
+            <h3>Place your order today!</h3>
+            <label for="new-first-name">First Name:</label>
+            <input type="text"  class="form-control" id="name">
+          </div>
+          <p>Please choose your pizza size:</p>
+            <label><input type="radio" name="pizzaSize" value="small">Small</label>
+            <label><input type="radio" name="pizzaSize" value="medium">Medium</label>
+            <label><input type="radio" name="pizzaSize" value="large">Large</label>
+          <p>Please choose your pizza topping:</p>
+            <label><input type="radio" name="pizzaFlavor" value="cheese">Cheese</label>
+            <label><input type="radio" name="pizzaFlavor" value="pepperoni">Pepperoni</label>
+            <label><input type="radio" name="pizzaFlavor" value="veggie">Veggie Combo</label>
+          <p>Would you like pick-up or delivery?</p>
+            <label><input type="radio" name="pickUpOrDelivery" value="pickUp">Pick-up</label>
+            <label><input type="radio" name="pickUpOrDelivery" value="delivery">Delivery</label>
+          <button type="submit" name="order">Price Quote</button>
+        </form>
+      </div>
+      <div class="price">
+        <h3>Total Price:</h3>
+        <ul id="orderPrice">
+        </ul>
+        <a href="https://www.youtube.com/watch?v=WBwixXNJ97w" target="_blank">Place Order!</a>
+      </div>
+      <div class="orderNames">
+        <h5>Click your name to review your order:</h5>
+        <ul id="userOrder">
+        </ul>
+      </div>
+      <div class="orderDetail">
+        <div id="showUserOrder">
+          <p><strong>Customer Name:</strong> <span class="name"></span></p>
+          <p><strong>Pizza Size:</strong> <span class="size"></span></p>
+          <p><strong>Pizza Topping:</strong> <span class="flavor"></span></p>
+          <p><strong>Pick-up or Delivery:</strong> <span class=pickOrDel></span></p>
+        </div>
+      </div>
+      <div class="contacts">
+        <h5>Contacts</h5>
+        <ul>
+          <li><strong>Location:</strong>  Duis aute irure dolor</li>
+          <li><strong>Phone:</strong> (123)456-7891</li>
+          <li><strong>Email:</strong>  Duis aute irure dolor</li>
+        </ul>
       </div>
     </div>
   </body>

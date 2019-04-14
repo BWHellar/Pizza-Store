@@ -1,0 +1,64 @@
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-auto-rows:minmax(100px, auto);
+  grid-gap:1em;
+  background-image: url(../img/pizzablk.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
+}
+.grid > div{
+  background: #FDB67888;
+  padding: 1em;
+  border-radius: 10px;
+}
+.grid > div:nth-child(odd){
+  background: #FF780088;
+  border-radius: 10px;
+}
+.grid > .header{
+  font-style: italic;
+  font-size: 2em 500px;
+  grid-column: 1/4;
+  grid-row: 1/2;
+  margin-top: 1%;
+  text-align: center;
+  color: white;
+  text-shadow: 3px 5px gray;
+}
+.orderForm{
+  font-weight: bolder;
+}
+ul li{
+  border-left: 5px solid red;
+  background-color: #f1f1f199;
+  list-style-type: none;
+  padding: 10px 20px;
+}
+#orderPrice{
+  font-size: 50px;
+}
+#showUserOrder{
+  display: none;
+}
+a:link{
+  margin-top: 70%;
+  background-color: #FF3E00;
+  color: black;
+  border: 2px solid black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+  float: right;
+}
+
+a:hover, a:active {
+  background-color: green;
+  color: black;
+}
+h5{
+  font-weight: bolder;
+}
