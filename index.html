@@ -11,10 +11,10 @@
   <body>
     <div class="container">
       <form class="submitOrder">
-        <div class="form-group"
-          <label for="userName">Name for the Order:</label>
-          <input type="text" class="form-control" id="userName">
-        </div>
+        <div class="form-group">
+              <label for="new-first-name">First Name:</label>
+              <input type="text"  class="form-control" id="name">
+            </div>
         <p>Please choose your pizza size:</p>
           <label><input type="radio" name="pizzaSize" value="small">Small</label>
           <label><input type="radio" name="pizzaSize" value="medium">Medium</label>
@@ -31,14 +31,13 @@
       <h3>Order</h3>
       <ul id="userOrder">
       </ul>
+      <ul id="orderPrice">
+      </ul>
       <div id="showUserOrder">
         <p><strong>Customer Name:</strong> <span class="name"></span></p>
         <p><strong>Pizza Size:</strong> <span class="size"></span></p>
         <p><strong>Pizza Topping:</strong> <span class="flavor"></span></p>
         <p><strong>Pick-up or Delivery:</strong> <span class=pickOrDel></span></p>
-        <p>Size Price: <span class="size-price"></span></p>
-        <p>Topping Price: <span class="flavor-price"></span></p>
-        <p>Pick-up or Delivery Price: <span class="pickOrDel-price"></span></p>
       </div>
     </div>
   </body>
