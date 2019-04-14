@@ -20,11 +20,10 @@ A website created with HTML and JS/JQuery where a user can input a name for an o
 
 ## Setup/Installation Requirements
 
-
-1a. Clone the repository
-2a. Open the index.html file in your browser of choice.
-3a. On your browser, navigate to the page and enjoy!
-1b.
+* 1a.Clone the repository
+* 2a.Open the index.html file in your browser of choice.
+* 3a.On your browser, navigate to the page and enjoy!
+* 1b.Copy and paste this link to view live https://cryfecteau.github.io/Pizza-Store/
 
 ## Known Bugs
 * No known bugs at this time.
@@ -37,7 +36,7 @@ A website created with HTML and JS/JQuery where a user can input a name for an o
 
 ## Support and contact details
 
-_Email us with any questions, comments, or concerns. Contact Crystal @ Crystal_Fecteau@ymail.com
+_Email with any questions, comments, or concerns. Contact Crystal @ Crystal_Fecteau@ymail.com
 
 ### License
 
