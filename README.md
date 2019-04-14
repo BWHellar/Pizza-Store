@@ -6,7 +6,7 @@
 
 ## Description
 
-A website created with HTML and JS/JQuery where a user can input a name for an order and customize their pizza order while having it saved so if can be reviewed in the furture.
+A website created with HTML and JS/JQuery where a user can input a name for an order and customize their pizza order while having it saved so if can be reviewed in the future.
 
 
 ### Specs
@@ -16,7 +16,7 @@ A website created with HTML and JS/JQuery where a user can input a name for an o
 | **Saves User Order**| User Input: "Small, Cheese, with Delivery" | Output: "Size: Small, Topping: Cheese, Pick-up or Delivery: Delivery" |
 | **Has a list of saved orders that shows more detail upon click**| Input: Order Info | Output: <li> |
 |**Can click on "Price Quote to display the pizza price"**| Input: "Small, Cheese, with Delivery" | Output: "12.49" |
-|**Can click on "Place Order!" to be redirected to a differnt site**| Action: "Clicked Place Order!"| Output: "href.."
+|**Can click on "Place Order!" to be redirected to a different site**| Action: "Clicked Place Order!"| Output: "href.."
 
 ## Setup/Installation Requirements
 
